@@ -1,0 +1,14 @@
+install-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2 # Checking out the repo
+
+      # https://github.com/marketplace/actions/pipenv-for-github-actions
+      # https://github.com/VaultVulp/action-pipenv - note that this always uses the
+      # latest version of Python available in the image.
+      # See https://github.com/VaultVulp/action-pipenv/issues/1
+    - name: Install dependecies
+      uses: VaultVulp/action-pipenv@v2.0.1
+      with:
+        command: install -d # Install all dependencies, including development ones
