@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 dynaconf = "*"
-linkedin-api = "~=2.0.0a"
+linkedin-api = ">=2.0.0a"
 click = "*"
 
 [dev-packages]
@@ -15,4 +15,10 @@ python_version = "3.9"
 
 [scripts]
 main = "src/main.py"
-showProfile = "src/main.py show-profile"
+showMiniProfile = "src/main.py show-mini-profile"
+getConversations = "src/main.py get-conversations"
+showFullProfile = "src/main.py show-full-profile"
+showProfileUpdates = "src/main.py show-profile-updates"
+getProfilePosts = "src/main.py get-profile-posts"
+showProfileConnections = "src/main.py show-profile-connections"
+showFeedActivity = "src/main.py show-feed-activity"
