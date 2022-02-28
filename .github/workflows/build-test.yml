@@ -1,4 +1,14 @@
-install-test:
+name: Build and test application
+
+on:
+  push:
+    branches:
+      - '*'
+  schedule:
+    - cron: '30 5 * * 2,4'
+
+jobs:
+  install-test:
     runs-on: ubuntu-latest
 
     steps:
